@@ -74,9 +74,15 @@
                 </div>
             </div>
             <div class="d-flex flex-column w-100">
-                <button type="submit" class="btn btn-primary w-100 mx-0">
+                <button type="submit" class="btn btn-primary w-100 mx-0" onclick="returnMessage()">
                     Enviar
                 </button>
+                
+                <script>
+                    function returnMessage() {
+                        alert("Obrigado por entrar em contato! Enviaremos um email de volta pelo 'help.user@work.bookmark' assim que possível.");
+                    };
+                </script>
             </div>
         </form>
         
