@@ -17,42 +17,65 @@
         <nav class="navbar">
            <ul class="d-flex flex-row gap-2" style="list-style: none;">
                <li><a href="../index.html" class="text-white text-decoration-none">Início</a></li>
-               <li><a href="./consult_book_data.html" class="text-white text-decoration-none fw-medium">Consultar</a></li>
+               <li><a href="./contact.html" class="text-white text-decoration-none fw-medium">Contato</a></li>
            </ul>
         </nav>
     </header>
 
     <!-- Content -->
-    <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 ml-0 px-5" style="margin-top: 100px;">
+    <div class="d-flex flex-column justify-content-center align-items-center w-100 ml-0 px-5 justify-content-center align-items-center" style="height: 90vh;">
        <!-- Modal -->
         <div  >
         </div>
 
-        <form class="d-flex flex-column justify-content-center align-items-center bg-dark border border-2 border-secondary rounded h-100 p-4">
+        <form class="d-flex flex-column justify-content-center align-items-center bg-dark border border-2 border-secondary rounded w-100 p-4" style="max-width: 350px;">
             <h3 class="text-white">
-                Sobre o livro
+                Entrar em contato
             </h3>
-            <div class="mb-3 row">
+
+            <!-- Email -->
+            <div class="mb-3 d-flex flex-column w-100">
                 <label
-                    for="searchBookName"
+                    for="userEmail"
                     class="text-white fw-medium"
-                    >Livro</label
+                    >Seu email</label
                 >
                 <div
-                    class=""
+                    class="d-flex flex-column w-100"
                 >
                     <input
                         type="text"
                         class="form-control bg-dark border border-2 border-secondary rounded text-white"
-                        name="searchBookName"
-                        id="searchBookName"
-                        placeholder="Name"
+                        name="userEmail"
+                        id="userEmail"
+                        placeholder="Email"
                     />
                 </div>
             </div>
-            <div class="row w-100">
+
+            <!-- Description -->
+            <div class="mb-3 d-flex flex-column w-100">
+                <label
+                    for="descripton"
+                    class="text-white fw-medium"
+                    >Motivo</label
+                >
+                <div
+                    class="w-100"
+                >
+                    <input
+                        type="text"
+                        class="form-control bg-dark border border-2 border-secondary rounded text-white"
+                        name="descripton"
+                        id="descripton"
+                        placeholder="Motivo"
+                        style="height: 200px;"
+                    />
+                </div>
+            </div>
+            <div class="d-flex flex-column w-100">
                 <button type="submit" class="btn btn-primary w-100 mx-0">
-                    Pesquisar
+                    Enviar
                 </button>
             </div>
         </form>
